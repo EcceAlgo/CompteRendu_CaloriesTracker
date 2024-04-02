@@ -1,10 +1,10 @@
 # CompteRendu_CaloriesTracker
 
 # Introduction
-
+## Presentation du projet
 # Analyse des besoins
 
-# Security
+# Securité
 
 # Conception
 
