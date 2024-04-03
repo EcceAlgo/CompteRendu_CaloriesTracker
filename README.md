@@ -12,6 +12,11 @@
 ## Analyse des fonctionnalites requises
 ## Etude de faisabilite technique
 
+# Analyse des risques
+
+## Risques techniques 
+## Risques sanitaires
+
 # Planification 
 
 # Sécurité
