@@ -12,11 +12,13 @@
 ## Analyse des fonctionnalites requises
 ## Etude de faisabilite technique
 
-# Securité
+# Planification 
+
+# Sécurité
 
 ## Types d'attaque
 ## Mesures de sécurité mises en place
-## Conformité aux normes de sécurité des données
+## Conformité aux normes de sécurité des données (RGPD=> UE, HIPAA=> US)
 
 # Conception
 
@@ -43,6 +45,7 @@
 ## Processus de déploiement de l'application
 ## Gestion des mises à jour et de la maintenance continue
 ## Suivi des performances et optimisations réalisées
+
 
 # Conclusion
 
