@@ -14,7 +14,7 @@
 
 # Securité
 
-## Les types d'attaque
+## Types d'attaque
 ## Mesures de sécurité mises en place
 ## Conformité aux normes de sécurité des données
 
