@@ -14,9 +14,6 @@
 
 # Analyse des risques
 
-## Risques techniques 
-## Risques sanitaires
-
 # Planification 
 
 # Sécurité
