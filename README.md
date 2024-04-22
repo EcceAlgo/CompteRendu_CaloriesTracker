@@ -58,11 +58,84 @@ Sur la base de cette étude de faisabilité, il a été conclu que l'utilisation
 
 # Planification 
 
-# Sécurité
+# Stratégie de Sécurisation de l'Application CaloriesTracker
 
-## Types d'attaque
-## Mesures de sécurité mises en place
-## Conformité aux normes de sécurité des données (RGPD=> UE, HIPAA=> US)
+La partie sécurité de notre application CaloriesTracker est listé sur 3 axes primordiaux de protection.
+
+Cette application a pour but de venir en aide à toutes les personnes souhaitant atteindre leurs objectifs physiques.
+
+## Les 3 Grands Axes
+
+Les trois grands axes sur lesquels nous allons nous concentrer aujourd’hui sont :
+- La protection des données personnelles.
+- L’identification.
+- La protection de la partie client.
+
+## La Mise en Place
+
+### La Protection des Données Personnelles
+
+- Utiliser le principe de Moindre Privilège (pour limiter les vols ainsi que la destruction de données).
+- HTTPS (pour sécuriser les échanges de données).
+- CSP (permet de sécuriser les échanges avec l’API).
+
+### La Sécurité Liée aux Mots de Passe
+
+- Interdire l’accès après trop de tentatives échouées (8) de mots de passe pour contrer les attaques en ligne.
+- Hacher le mot de passe ainsi que rajouter un salage pour contrer les attaques hors ligne.
+- Utiliser des caractères spéciaux dans les mots de passe pour contrer les attaques par dictionnaire.
+- Utiliser un canal sécurisé comme un flux encapsulé pour un protocole TLS pour contrer les attaques par l'homme du milieu.
+- Complexité et longueur minimale requises.
+- Notifications d’activités suspectes.
+
+### La Sécurité Liée à l’Expérience Utilisateur
+
+- Défense en profondeur.
+- Réduction de la surface d’attaques.
+- HSTS (pour limiter les risques d’attaque ‘man in the middle‘).
+- SOP
+- CORS
+- Utilisation de la balise HTML `<template>` contre les vulnérabilités XSS.
+- Dissocier clairement la composition des pages web (HTML, CSS, JAVASCRIPT).
+- Utiliser le X-XSS protection 
+- Utiliser XMLHttpRequest (pour encoder)
+- Choisir une API selon sa méthode HTTP
+- Audit.
+
+## Éléments Supplémentaires pour une Stratégie de Sécurisation
+
+- Mettre en place une politique de gestion des identités et des accès (IAM).
+- Effectuer régulièrement des tests de pénétration et des audits de sécurité.
+- Mettre en place un système de surveillance et d'alerte en cas d'activité suspecte.
+- Former le personnel sur les meilleures pratiques de sécurité et la sensibilisation aux menaces.
+- Maintenir une veille technologique constante pour rester à jour sur les nouvelles vulnérabilités et les meilleures pratiques de sécurité.
+
+### Gestion des Vulnérabilités
+
+- Mettre en place un processus de gestion des vulnérabilités pour identifier, évaluer et traiter les failles de sécurité dès leur découverte.
+- Assurer la veille sur les bases de données de vulnérabilités et les alertes de sécurité pour rester informé des menaces émergentes.
+
+### Gestion des Logs
+
+- Mettre en place un système de journalisation (logs) pour enregistrer les événements de l'application, afin de faciliter la détection et l'investigation des incidents de sécurité.
+- Définir une politique de rétention des logs pour garantir la disponibilité des données nécessaires à l'analyse des incidents.
+
+### Protection contre les Attaques par Déni de Service (DDoS)
+
+- Mettre en place des mesures de protection contre les attaques par déni de service (DDoS), telles que la limitation des requêtes par IP, la mise en cache des ressources, ou l'utilisation de services de protection DDoS tiers.
+
+### Gestion des Sessions Utilisateurs
+
+- Implémenter des mécanismes de gestion des sessions utilisateurs, tels que l'expiration automatique des sessions après une période d'inactivité, et la ré-authentification périodique.
+
+### Chiffrement des Données Sensibles
+
+- Appliquer le chiffrement des données sensibles au repos et en transit, en utilisant des algorithmes cryptographiques robustes et des protocoles sécurisés.
+
+### Sécurisation des Déploiements et des Environnements
+
+- Mettre en œuvre des pratiques de sécurisation des déploiements et des environnements, telles que la segmentation réseau, la gestion des configurations sécurisées, et la supervision des activités système.
+
 
 # Conception
 
